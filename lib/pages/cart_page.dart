@@ -19,7 +19,7 @@ class CartPage extends StatelessWidget {
             children: [
               // Let's order fresh items for you
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 24.0),
+                padding: const EdgeInsets.symmetric(horizontal: 24.0),
                 child: Text(
                   "My Cart",
                   style: GoogleFonts.notoSerif(
@@ -35,7 +35,7 @@ class CartPage extends StatelessWidget {
                   padding: const EdgeInsets.all(12.0),
                   child: ListView.builder(
                     itemCount: value.cartItems.length,
-                    padding: EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(12),
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.all(12.0),
@@ -107,8 +107,8 @@ class CartPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(28),
                         ),
                         padding: const EdgeInsets.all(12),
-                        child: Row(
-                          children: const [
+                        child: const Row(
+                          children: [
                             Text(
                               'Pay Now',
                               style: TextStyle(color: Colors.white),
